@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1500" viewBox="0 0 1900 1500">
+<rect width="1900" height="1500" fill="white"/>
+<text x="40" y="52" font-family="Arial,DejaVu Sans,sans-serif" font-size="32" fill="#21324b">Целевая C4 Level 1: мобильная платформа</text>
+<text x="40" y="86" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Серый: существующее. Синий: новое / расширяемое. Стрелка: запрос или доставка по подписи.</text>
+<polyline points="310,170 600,170" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="600,170 588.9472680719654,174.6730201077038 588.9472680719654,165.3269798922962" fill="#48617f"/>
+<rect x="356" y="139" width="140.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="360" y="159" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">01 Использует</text>
+<polyline points="750,220 750,380" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="750,380 745.3269798922962,368.94726807196537 754.6730201077038,368.94726807196537" fill="#48617f"/>
+<rect x="761" y="284" width="134.984375" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="765" y="304" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">02 HTTPS API</text>
+<polyline points="900,170 1250,170" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="1250,170 1238.9472680719655,174.6730201077038 1238.9472680719655,165.3269798922962" fill="#48617f"/>
+<rect x="961" y="139" width="157.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="965" y="159" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">03 OIDC + PKCE</text>
+<polyline points="1000,420 1130,420 1130,260 1400,260 1400,220" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="1400,220 1404.673020107704,231.05273192803463 1395.326979892296,231.05273192803463" fill="#48617f"/>
+<rect x="1146" y="229" width="168.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="1150" y="249" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">04 JWKS / HTTPS</text>
+<polyline points="600,480 450,480 450,760 350,760" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="350,760 361.05273192803463,755.3269798922962 361.05273192803463,764.6730201077038" fill="#48617f"/>
+<rect x="356" y="719" width="87.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="360" y="739" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">05 REST</text>
+<polyline points="750,540 750,700" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="750,700 745.3269798922962,688.9472680719654 754.6730201077038,688.9472680719654" fill="#48617f"/>
+<rect x="761" y="599" width="87.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="765" y="619" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">06 REST</text>
+<polyline points="1000,500 1250,500 1250,700" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="1250,700 1245.326979892296,688.9472680719654 1254.673020107704,688.9472680719654" fill="#48617f"/>
+<rect x="1136" y="559" width="87.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="1140" y="579" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">07 REST</text>
+<polyline points="1250,820 1370,820 1370,1230 1250,1230 1250,1280" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="1250,1280 1245.326979892296,1268.9472680719655 1254.673020107704,1268.9472680719655" fill="#48617f"/>
+<rect x="1261" y="1244" width="86.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="1265" y="1264" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">08 HTTP</text>
+<polyline points="600,520 400,520 400,1060 500,1060" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="500,1060 488.94726807196537,1064.673020107704 488.94726807196537,1055.326979892296" fill="#48617f"/>
+<rect x="401" y="1019" width="87.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="405" y="1039" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">09 REST</text>
+<polyline points="1000,530 1050,530 1050,1000" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="1050,1000 1045.326979892296,988.9472680719654 1054.673020107704,988.9472680719654" fill="#48617f"/>
+<rect x="1061" y="904" width="87.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="1065" y="924" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">10 REST</text>
+<polyline points="1650,700 1650,500" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="1650,500 1654.673020107704,511.05273192803463 1645.326979892296,511.05273192803463" fill="#48617f"/>
+<rect x="1661" y="599" width="147.984375" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="1665" y="619" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">11 REST polling</text>
+<polyline points="1650,820 1650,1000" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="1650,1000 1645.326979892296,988.9472680719654 1654.673020107704,988.9472680719654" fill="#48617f"/>
+<rect x="1661" y="904" width="91.984375" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="1665" y="924" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">12 AMQP</text>
+<polyline points="1450,1040 1420,1040 1420,870 750,870 750,820" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="750,820 754.6730201077038,831.0527319280346 745.3269798922962,831.0527319280346" fill="#48617f"/>
+<rect x="796" y="839" width="208.96875" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="800" y="859" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">13 Результаты / async</text>
+<polyline points="1000,410 1180,410 1180,330 1850,330 1850,1060 1800,1060" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="1800,1060 1811.0527319280345,1055.326979892296 1811.0527319280345,1064.673020107704" fill="#48617f"/>
+<rect x="1526" y="299" width="165.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="1530" y="319" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">14 Outbox / async</text>
+<polyline points="1625,1120 1625,1190 200,1190 200,1120" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="200,1120 204.6730201077038,1131.0527319280345 195.3269798922962,1131.0527319280345" fill="#48617f"/>
+<rect x="526" y="1159" width="182.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="530" y="1179" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">15 События / async</text>
+<polyline points="50,1060 20,1060 20,170 50,170" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="50,170 38.94726807196538,174.6730201077038 38.94726807196538,165.3269798922962" fill="#48617f"/>
+<rect x="26" y="899" width="118.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="30" y="919" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">16 Доставка</text>
+<polyline points="350,430 600,430" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="600,430 588.9472680719654,434.6730201077038 588.9472680719654,425.3269798922962" fill="#48617f"/>
+<rect x="371" y="399" width="134.984375" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="375" y="419" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">17 HTTPS API</text>
+<rect x="50" y="120" width="260" height="100" fill="#f1f3f6" stroke="#48617f" stroke-width="2"/>
+<text x="62" y="152" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Пациент</text>
+<text x="62" y="179" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">[Человек]</text>
+<rect x="600" y="120" width="300" height="100" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="612" y="152" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Мобильное приложение</text>
+<text x="612" y="179" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">[Внешний участник]</text>
+<rect x="1250" y="120" width="300" height="100" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="1262" y="152" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">IdP [новая система]</text>
+<text x="1262" y="179" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">OIDC / OAuth 2.0</text>
+<rect x="50" y="380" width="300" height="100" fill="#f1f3f6" stroke="#48617f" stroke-width="2"/>
+<text x="62" y="412" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Веб-портал [существ.]</text>
+<text x="62" y="439" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Перевод на общий API</text>
+<rect x="600" y="380" width="400" height="160" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="612" y="412" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Мобильная платформа [новая]</text>
+<text x="612" y="439" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">[Центральная система]</text>
+<text x="612" y="466" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Gateway/BFF, Saga,</text>
+<text x="612" y="493" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">платёжный адаптер</text>
+<rect x="1450" y="380" width="350" height="120" fill="#f1f3f6" stroke="#48617f" stroke-width="2"/>
+<text x="1462" y="412" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">LIS [существующая]</text>
+<text x="1462" y="439" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Результаты / REST</text>
+<text x="1462" y="466" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Лаборант: просмотр</text>
+<rect x="50" y="700" width="300" height="120" fill="#f1f3f6" stroke="#48617f" stroke-width="2"/>
+<text x="62" y="732" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Расписание [существ.]</text>
+<text x="62" y="759" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">REST / врачебные слоты</text>
+<text x="62" y="786" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Hold / Confirm / Cancel</text>
+<rect x="600" y="700" width="300" height="120" fill="#f1f3f6" stroke="#48617f" stroke-width="2"/>
+<text x="612" y="732" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">CRM [существующая]</text>
+<text x="612" y="759" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Карточка / анализы</text>
+<text x="612" y="786" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">REST / read model</text>
+<rect x="1100" y="700" width="300" height="120" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="1112" y="732" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Полис-фасад [новый]</text>
+<text x="1112" y="759" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Read model ДМС</text>
+<text x="1112" y="786" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Свежесть / UNKNOWN</text>
+<rect x="1500" y="700" width="300" height="120" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="1512" y="732" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">LIS Integration [новый]</text>
+<text x="1512" y="759" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Захват / spool / outbox</text>
+<text x="1512" y="786" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Контроль полноты</text>
+<rect x="50" y="1000" width="300" height="120" fill="#f1f3f6" stroke="#48617f" stroke-width="2"/>
+<text x="62" y="1032" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Уведомления [существ.]</text>
+<text x="62" y="1059" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">SMS / email / push</text>
+<text x="62" y="1086" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Внешние провайдеры</text>
+<rect x="500" y="1000" width="300" height="120" fill="#f1f3f6" stroke="#48617f" stroke-width="2"/>
+<text x="512" y="1032" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">PSP [внешний существ.]</text>
+<text x="512" y="1059" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">REST / оплата / статус</text>
+<text x="512" y="1086" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Возврат: контракт</text>
+<rect x="950" y="1000" width="350" height="120" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="962" y="1032" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Lab Reservation [новый]</text>
+<text x="962" y="1059" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Квоты забора биоматериала</text>
+<text x="962" y="1086" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Собственный календарь</text>
+<rect x="1450" y="1000" width="350" height="120" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="1462" y="1032" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">RabbitMQ [расширяется]</text>
+<text x="1462" y="1059" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Async AMQP/TLS</text>
+<text x="1462" y="1086" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Раздельные очереди</text>
+<rect x="1100" y="1280" width="300" height="100" fill="#f1f3f6" stroke="#48617f" stroke-width="2"/>
+<text x="1112" y="1312" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">1С: Полисы [существ.]</text>
+<text x="1112" y="1339" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">HTTP через адаптер</text>
+<text x="40" y="1444" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">ID интеграций раскрыты в Task2/README.md. Приложение - программный участник, пациент - человек.</text>
+<text x="40" y="1470" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">LIS владеет результатом, Lab Reservation - квотой; медицинские данные не передаются в push.</text>
+</svg>

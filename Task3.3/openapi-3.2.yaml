@@ -1,0 +1,160 @@
+openapi: 3.2.0
+info:
+  title: Health Patient Appointments API
+  version: 1.0.0
+  description: Synthetic design contract. All patient data are resolved from the authenticated subject.
+servers:
+  - url: https://api.health.example/api/v1
+security:
+  - bearerAuth: []
+paths:
+  /appointments:
+    get:
+      operationId: listMyUpcomingAppointments
+      summary: List upcoming confirmed appointments for the current patient
+      description: Sorted by startsAt ASC, id ASC. No arbitrary patientId is accepted.
+      parameters:
+        - name: status
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [upcoming]
+            default: upcoming
+          description: Confirmed appointments starting after serverTime of this query.
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 20
+        - name: offset
+          in: query
+          schema:
+            type: integer
+            minimum: 0
+            default: 0
+      responses:
+        '200':
+          description: Current patient appointments; an empty items array is a valid result.
+          headers:
+            Cache-Control:
+              schema: {type: string}
+              description: Always no-store.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AppointmentPage'
+              example:
+                items:
+                  - id: apt-demo-001
+                    doctor: {id: doctor-demo-01, displayName: Demo Doctor}
+                    clinic: {id: clinic-demo-01, name: Demo Clinic, timeZone: Europe/Moscow}
+                    startsAt: '2026-12-01T09:00:00Z'
+                    endsAt: '2026-12-01T09:30:00Z'
+                    status: confirmed
+                    version: 2
+                page: {limit: 20, offset: 0, hasMore: false}
+                serverTime: '2026-11-08T10:00:00Z'
+        '400':
+          description: Invalid query parameters.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/Error'}
+              example: {code: INVALID_QUERY, message: limit must be between 1 and 100, requestId: req-demo-400}
+        '401':
+          description: Missing, invalid or expired access token.
+          headers:
+            WWW-Authenticate:
+              schema: {type: string}
+              example: Bearer realm="health-api"
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/Error'}
+              example: {code: UNAUTHENTICATED, message: A valid access token is required, requestId: req-demo-401}
+        '403':
+          description: The subject has no patient role or verified patient binding.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/Error'}
+              example: {code: FORBIDDEN, message: Patient access is required, requestId: req-demo-403}
+        '429':
+          description: Request rate exceeded.
+          headers:
+            Retry-After:
+              description: Seconds until retry is allowed.
+              schema: {type: integer, minimum: 1}
+              example: 10
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/Error'}
+              example: {code: RATE_LIMITED, message: Retry later, requestId: req-demo-429}
+        '500':
+          description: Unexpected internal error; no implementation details are exposed.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/Error'}
+              example: {code: INTERNAL_ERROR, message: Unable to retrieve appointments, requestId: req-demo-500}
+        '503':
+          description: Temporarily unavailable; retry after the given interval.
+          headers:
+            Retry-After:
+              schema: {type: integer, minimum: 1}
+              example: 5
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/Error'}
+              example: {code: UNAVAILABLE, message: Service temporarily unavailable, requestId: req-demo-503}
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: OIDC access token; issuer, audience, expiry and patient access are checked server-side.
+  schemas:
+    AppointmentPage:
+      type: object
+      required: [items, page, serverTime]
+      properties:
+        items:
+          type: array
+          items: {$ref: '#/components/schemas/Appointment'}
+        page:
+          type: object
+          required: [limit, offset, hasMore]
+          properties:
+            limit: {type: integer, minimum: 1, maximum: 100}
+            offset: {type: integer, minimum: 0}
+            hasMore: {type: boolean}
+        serverTime: {type: string, format: date-time}
+    Appointment:
+      type: object
+      required: [id, doctor, clinic, startsAt, endsAt, status, version]
+      properties:
+        id: {type: string, minLength: 1}
+        doctor:
+          type: object
+          required: [id, displayName]
+          properties:
+            id: {type: string, minLength: 1}
+            displayName: {type: string, minLength: 1}
+        clinic:
+          type: object
+          required: [id, name, timeZone]
+          properties:
+            id: {type: string, minLength: 1}
+            name: {type: string, minLength: 1}
+            timeZone: {type: string, example: Europe/Moscow}
+        startsAt: {type: string, format: date-time}
+        endsAt: {type: string, format: date-time}
+        status: {type: string, enum: [confirmed]}
+        version: {type: integer, minimum: 1}
+    Error:
+      type: object
+      required: [code, message, requestId]
+      properties:
+        code: {type: string}
+        message: {type: string}
+        requestId: {type: string}

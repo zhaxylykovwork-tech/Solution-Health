@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1384" viewBox="0 0 1900 1384">
+<rect width="1900" height="1384" fill="white"/>
+<text x="40" y="52" font-family="Arial,DejaVu Sans,sans-serif" font-size="32" fill="#21324b">Успех Saga: запись → ДМС → оплата → лаборатория</text>
+<text x="40" y="86" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">UML Sequence: сверху вниз. Сплошная стрелка - команда/запрос, пунктирная - ответ.</text>
+<polyline points="152.5,210 152.5,1274" fill="none" stroke="#48617f" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="377.5,210 377.5,1274" fill="none" stroke="#48617f" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="602.5,210 602.5,1274" fill="none" stroke="#48617f" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="827.5,210 827.5,1274" fill="none" stroke="#48617f" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="1052.5,210 1052.5,1274" fill="none" stroke="#48617f" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="1277.5,210 1277.5,1274" fill="none" stroke="#48617f" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="1502.5,210 1502.5,1274" fill="none" stroke="#48617f" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="1727.5,210 1727.5,1274" fill="none" stroke="#48617f" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="152.5,260 377.5,260" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="377.5,260 366.44726807196537,264.6730201077038 366.44726807196537,255.3269798922962" fill="#48617f"/>
+<rect x="106.54150390625" y="232" width="324.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="110.54150390625" y="252" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">1 POST booking + Idempotency-Key</text>
+<polyline points="377.5,313 152.5,313" fill="none" stroke="#48617f" stroke-width="2" stroke-dasharray="8 6"/>
+<polygon points="152.5,313 163.55273192803463,308.3269798922962 163.55273192803463,317.6730201077038" fill="#48617f"/>
+<rect x="74.019775390625" y="285" width="389.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="78.019775390625" y="305" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">2 202 operationId; Saga и outbox committed</text>
+<polyline points="377.5,366 602.5,366" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="602.5,366 591.4472680719654,370.6730201077038 591.4472680719654,361.3269798922962" fill="#48617f"/>
+<rect x="375.10791015625" y="338" width="234.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="379.10791015625" y="358" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">3 HoldDoctor(sagaId:hold)</text>
+<polyline points="602.5,419 377.5,419" fill="none" stroke="#48617f" stroke-width="2" stroke-dasharray="8 6"/>
+<polygon points="377.5,419 388.55273192803463,414.3269798922962 388.55273192803463,423.6730201077038" fill="#48617f"/>
+<rect x="424.212890625" y="391" width="134.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="428.212890625" y="411" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">4 doctorHoldId</text>
+<polyline points="377.5,472 827.5,472" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="827.5,472 816.4472680719654,476.6730201077038 816.4472680719654,467.3269798922962" fill="#48617f"/>
+<rect x="428.469482421875" y="444" width="355.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="432.469482421875" y="464" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">5 CheckCoverage(patient, service, date)</text>
+<polyline points="827.5,525 377.5,525" fill="none" stroke="#48617f" stroke-width="2" stroke-dasharray="8 6"/>
+<polygon points="377.5,525 388.55273192803463,520.3269798922962 388.55273192803463,529.6730201077038" fill="#48617f"/>
+<rect x="408.968505859375" y="497" width="392.984375" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="412.968505859375" y="517" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">6 VALID + fresh version; сумма определена</text>
+<polyline points="377.5,578 1052.5,578" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="1052.5,578 1041.4472680719655,582.6730201077038 1041.4472680719655,573.3269798922962" fill="#48617f"/>
+<rect x="497.134033203125" y="550" width="442.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="501.134033203125" y="570" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">7 Pay(merchantOperationId); intent уже committed</text>
+<polyline points="1052.5,631 377.5,631" fill="none" stroke="#48617f" stroke-width="2" stroke-dasharray="8 6"/>
+<polygon points="377.5,631 388.55273192803463,626.3269798922962 388.55273192803463,635.6730201077038" fill="#48617f"/>
+<rect x="590.36669921875" y="603" width="253.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="594.36669921875" y="623" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">8 CONFIRMED + paymentId</text>
+<polyline points="377.5,684 1277.5,684" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="1277.5,684 1266.4472680719655,688.6730201077038 1266.4472680719655,679.3269798922962" fill="#48617f"/>
+<rect x="708.89697265625" y="656" width="242.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="712.89697265625" y="676" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">9 HoldLab(sagaId:lab-hold)</text>
+<polyline points="1277.5,737 377.5,737" fill="none" stroke="#48617f" stroke-width="2" stroke-dasharray="8 6"/>
+<polygon points="377.5,737 388.55273192803463,732.3269798922962 388.55273192803463,741.6730201077038" fill="#48617f"/>
+<rect x="739.001953125" y="709" width="181.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="743.001953125" y="729" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">10 labReservationId</text>
+<polyline points="377.5,790 602.5,790" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="602.5,790 591.4472680719654,794.6730201077038 591.4472680719654,785.3269798922962" fill="#48617f"/>
+<rect x="379.34765625" y="762" width="223.984375" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="383.34765625" y="782" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">11 ConfirmDoctor(holdId)</text>
+<polyline points="602.5,843 377.5,843" fill="none" stroke="#48617f" stroke-width="2" stroke-dasharray="8 6"/>
+<polygon points="377.5,843 388.55273192803463,838.3269798922962 388.55273192803463,847.6730201077038" fill="#48617f"/>
+<rect x="431.082763671875" y="815" width="120.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="435.082763671875" y="835" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">12 confirmed</text>
+<polyline points="377.5,896 1277.5,896" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="1277.5,896 1266.4472680719655,900.6730201077038 1266.4472680719655,891.3269798922962" fill="#48617f"/>
+<rect x="683.56982421875" y="868" width="293.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="687.56982421875" y="888" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">13 ConfirmLab(labReservationId)</text>
+<polyline points="1277.5,949 377.5,949" fill="none" stroke="#48617f" stroke-width="2" stroke-dasharray="8 6"/>
+<polygon points="377.5,949 388.55273192803463,944.3269798922962 388.55273192803463,953.6730201077038" fill="#48617f"/>
+<rect x="768.582763671875" y="921" width="120.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="772.582763671875" y="941" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">14 confirmed</text>
+<polyline points="377.5,1002 1502.5,1002" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="1502.5,1002 1491.4472680719655,1006.6730201077038 1491.4472680719655,997.3269798922962" fill="#48617f"/>
+<rect x="712.448486328125" y="974" width="464.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="716.448486328125" y="994" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">15 COMPLETED + outbox; затем BookingConfirmed</text>
+<polyline points="1502.5,1055 1727.5,1055" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="1727.5,1055 1716.4472680719655,1059.673020107704 1716.4472680719655,1050.326979892296" fill="#48617f"/>
+<rect x="1422.28955078125" y="1027" width="392.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="1426.28955078125" y="1047" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">16 Доставка события после publish confirm</text>
+<polyline points="152.5,1108 377.5,1108" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="377.5,1108 366.44726807196537,1112.673020107704 366.44726807196537,1103.326979892296" fill="#48617f"/>
+<rect x="178.08837890625" y="1080" width="177.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="182.08837890625" y="1100" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">17 GET operationId</text>
+<polyline points="377.5,1161 152.5,1161" fill="none" stroke="#48617f" stroke-width="2" stroke-dasharray="8 6"/>
+<polygon points="152.5,1161 163.55273192803463,1156.326979892296 163.55273192803463,1165.673020107704" fill="#48617f"/>
+<rect x="54.528076171875" y="1133" width="429.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="58.528076171875" y="1153" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">18 COMPLETED + bookingId + labReservationId</text>
+<rect x="50.0" y="130" width="205.0" height="80" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="62.0" y="162" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Приложение</text>
+<text x="62.0" y="189" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">[Участник]</text>
+<rect x="275.0" y="130" width="205.0" height="80" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="287.0" y="162" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Платформа/Saga</text>
+<text x="287.0" y="189" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">[Участник]</text>
+<rect x="500.0" y="130" width="205.0" height="80" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="512.0" y="162" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Расписание</text>
+<text x="512.0" y="189" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">[Участник]</text>
+<rect x="725.0" y="130" width="205.0" height="80" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="737.0" y="162" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Полис-фасад</text>
+<text x="737.0" y="189" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">[Участник]</text>
+<rect x="950.0" y="130" width="205.0" height="80" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="962.0" y="162" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">PSP</text>
+<text x="962.0" y="189" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">[Участник]</text>
+<rect x="1175.0" y="130" width="205.0" height="80" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="1187.0" y="162" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Lab Reservation</text>
+<text x="1187.0" y="189" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">[Участник]</text>
+<rect x="1400.0" y="130" width="205.0" height="80" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="1412.0" y="162" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">RabbitMQ</text>
+<text x="1412.0" y="189" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">[Участник]</text>
+<rect x="1625.0" y="130" width="205.0" height="80" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="1637.0" y="162" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Уведомления</text>
+<text x="1637.0" y="189" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">[Участник]</text>
+<text x="40" y="1328" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">Saga хранит состояние каждого шага. Неопределённый платёж сверяется, а не списывается заново.</text>
+<text x="40" y="1354" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">Компенсации и переходы при отказах - Task3.2/README.md; схема показывает только успешный путь.</text>
+</svg>

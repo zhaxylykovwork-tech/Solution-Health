@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1320" viewBox="0 0 1800 1320">
+<rect width="1800" height="1320" fill="white"/>
+<text x="40" y="52" font-family="Arial,DejaVu Sans,sans-serif" font-size="32" fill="#21324b">LIS → приложение: восстановимая доставка</text>
+<text x="40" y="86" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Блок-схема. Commit в источнике не равен доставке в CRM; push не равен просмотру пациентом.</text>
+<polyline points="500,200 650,200" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="650,200 638.9472680719654,204.6730201077038 638.9472680719654,195.3269798922962" fill="#48617f"/>
+<rect x="536" y="169" width="60.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="540" y="189" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">REST</text>
+<polyline points="880,270 880,420" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="880,420 875.3269798922962,408.94726807196537 884.6730201077038,408.94726807196537" fill="#48617f"/>
+<rect x="891" y="329" width="70.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="895" y="349" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">commit</text>
+<polyline points="880,550 880,700" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="880,700 875.3269798922962,688.9472680719654 884.6730201077038,688.9472680719654" fill="#48617f"/>
+<rect x="891" y="609" width="123.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="895" y="629" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">publish / retry</text>
+<polyline points="650,765 500,765" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="500,765 511.05273192803463,760.3269798922962 511.05273192803463,769.6730201077038" fill="#48617f"/>
+<rect x="531" y="729" width="60.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="535" y="749" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">async</text>
+<polyline points="290,830 290,1030" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="290,1030 285.3269798922962,1018.9472680719654 294.6730201077038,1018.9472680719654" fill="#48617f"/>
+<rect x="306" y="914" width="218.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="310" y="934" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">Доступен после commit</text>
+<polyline points="500,800 580,800 580,1090 650,1090" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="650,1090 638.9472680719654,1094.673020107704 638.9472680719654,1085.326979892296" fill="#48617f"/>
+<rect x="571" y="939" width="151.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="575" y="959" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">outbox → broker</text>
+<polyline points="1110,765 1250,765" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="1250,765 1238.9472680719655,769.6730201077038 1238.9472680719655,760.3269798922962" fill="#48617f"/>
+<rect x="1126" y="729" width="75.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="1130" y="749" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">ошибка</text>
+<polyline points="1480,700 1480,485 1110,485" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="1110,485 1121.0527319280345,480.3269798922962 1121.0527319280345,489.6730201077038" fill="#48617f"/>
+<rect x="1216" y="454" width="148.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="1220" y="474" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">контроль replay</text>
+<polyline points="1250,200 1110,200" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="1110,200 1121.0527319280345,195.3269798922962 1121.0527319280345,204.6730201077038" fill="#48617f"/>
+<rect x="1136" y="169" width="69.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="1140" y="189" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">сверка</text>
+<rect x="80" y="140" width="420" height="130" fill="#f1f3f6" stroke="#48617f" stroke-width="2"/>
+<text x="92" y="172" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">1. Готовый результат в LIS</text>
+<text x="92" y="199" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">resultId / patientId / version</text>
+<text x="92" y="226" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Точка начала гарантии</text>
+<rect x="650" y="140" width="460" height="130" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="662" y="172" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">2. REST capture / сверка</text>
+<text x="662" y="199" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Страница изменений + overlap</text>
+<text x="662" y="226" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">API изменений надо согласовать</text>
+<rect x="650" y="420" width="460" height="130" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="662" y="452" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">3. Durable spool + outbox</text>
+<text x="662" y="479" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Payload и cursor одним commit</text>
+<text x="662" y="506" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Повтор захвата безопасен</text>
+<rect x="650" y="700" width="460" height="130" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="662" y="732" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">4. RabbitMQ quorum queues</text>
+<text x="662" y="759" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Persistent + confirms + routing</text>
+<text x="662" y="786" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Отдельные CRM / notify очереди</text>
+<rect x="80" y="700" width="420" height="130" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="92" y="732" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">5. CRM consumer</text>
+<text x="92" y="759" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Inbox + version + upsert + outbox</text>
+<text x="92" y="786" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Ack после commit</text>
+<rect x="80" y="1030" width="420" height="130" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="92" y="1062" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">6. Приложение читает CRM</text>
+<text x="92" y="1089" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">REST через платформу / auth</text>
+<text x="92" y="1116" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Проверка patient и version</text>
+<rect x="1250" y="700" width="460" height="130" fill="#fff0cf" stroke="#48617f" stroke-width="2"/>
+<text x="1262" y="732" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">DLQ / карантин / оператор</text>
+<text x="1262" y="759" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Transient retry: 1/5/30/120/300 с</text>
+<text x="1262" y="786" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Затем исправление и replay</text>
+<rect x="650" y="1030" width="460" height="130" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="662" y="1062" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">7. Уведомления</text>
+<text x="662" y="1089" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">ResultAvailable после commit</text>
+<text x="662" y="1116" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Push не содержит сам результат</text>
+<rect x="1250" y="140" width="460" height="130" fill="#fff0cf" stroke="#48617f" stroke-width="2"/>
+<text x="1262" y="172" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Контроль полноты</text>
+<text x="1262" y="199" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">LIS manifest ↔ spool ↔ CRM</text>
+<text x="1262" y="226" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Повторный захват пропусков</text>
+<text x="40" y="1264" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">Отказ CRM не теряет outbox. Повтор после commit/ack безопасен по resultId/version.</text>
+<text x="40" y="1290" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">Недоступный change API без полного manifest - блокер доказательства полноты.</text>
+</svg>

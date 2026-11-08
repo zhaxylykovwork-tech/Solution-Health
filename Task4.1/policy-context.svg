@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="940" viewBox="0 0 1800 940">
+<rect width="1800" height="940" fill="white"/>
+<text x="40" y="52" font-family="Arial,DejaVu Sans,sans-serif" font-size="32" fill="#21324b">C4 Level 1: фасад разгружает 1С</text>
+<text x="40" y="86" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Read model внутри фасада не показана отдельным контейнером. Потоки запросов и обновлений подписаны.</text>
+<polyline points="430,230 650,230" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="650,230 638.9472680719654,234.6730201077038 638.9472680719654,225.3269798922962" fill="#48617f"/>
+<rect x="461" y="194" width="129.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="465" y="214" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">HTTPS REST</text>
+<polyline points="1130,230 1350,230" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="1350,230 1338.9472680719655,234.6730201077038 1338.9472680719655,225.3269798922962" fill="#48617f"/>
+<rect x="1151" y="194" width="124.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="1155" y="214" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">HTTP refresh</text>
+<polyline points="1510,290 1510,470 900,470 900,350" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="900,350 904.6730201077038,361.05273192803463 895.3269798922962,361.05273192803463" fill="#48617f"/>
+<rect x="946" y="434" width="460.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="950" y="454" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">Изменения / версии по согласованному контракту</text>
+<polyline points="890,650 890,350" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="890,350 894.6730201077038,361.05273192803463 885.3269798922962,361.05273192803463" fill="#48617f"/>
+<rect x="906" y="554" width="139.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="910" y="574" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">HTTPS / аудит</text>
+<rect x="80" y="170" width="350" height="120" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="92" y="202" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Мобильная платформа</text>
+<text x="92" y="229" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">[Соседняя система]</text>
+<text x="92" y="256" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Проверка ДМС</text>
+<rect x="650" y="170" width="480" height="180" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="662" y="202" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Полис-фасад [новая система]</text>
+<text x="662" y="229" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">[Центральная система]</text>
+<text x="662" y="256" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Локальная read model / version</text>
+<text x="662" y="283" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Общий бюджет 30 RPS в 1С</text>
+<text x="662" y="310" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Circuit Breaker / single-flight</text>
+<rect x="1350" y="170" width="350" height="120" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="1362" y="202" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">1С: Полисы [существ.]</text>
+<text x="1362" y="229" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">[Соседняя система]</text>
+<text x="1362" y="256" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Источник истины</text>
+<rect x="650" y="650" width="480" height="120" fill="#f1f3f6" stroke="#48617f" stroke-width="2"/>
+<text x="662" y="682" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Оператор ДМС [человек]</text>
+<text x="662" y="709" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Ручная проверка UNKNOWN</text>
+<text x="662" y="736" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Контролируемое обновление</text>
+<text x="40" y="884" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">Свежее покрытие нужно для финансового решения; stale / null / timeout → UNKNOWN.</text>
+<text x="40" y="910" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">1С остаётся master полиса. Экспорт изменений требует согласования и реализации.</text>
+</svg>
