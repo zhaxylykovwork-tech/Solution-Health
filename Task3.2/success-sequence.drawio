@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="Task3.2-success-sequence" name="Успех Saga: запись → ДМС → оплата → лаборатория">
+    <mxGraphModel grid="1" page="1" pageWidth="1900" pageHeight="1384">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Успех Saga: запись → ДМС → оплата → лаборатория&#10;UML Sequence: сверху вниз. Сплошная стрелка - команда/запрос, пунктирная - ответ." style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=24;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1820" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="life-app" style="endArrow=none;dashed=1;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="152.5" y="210" as="sourcePoint" />
+            <mxPoint x="152.5" y="1274" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="life-saga" style="endArrow=none;dashed=1;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="377.5" y="210" as="sourcePoint" />
+            <mxPoint x="377.5" y="1274" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="life-sch" style="endArrow=none;dashed=1;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="602.5" y="210" as="sourcePoint" />
+            <mxPoint x="602.5" y="1274" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="life-pol" style="endArrow=none;dashed=1;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="827.5" y="210" as="sourcePoint" />
+            <mxPoint x="827.5" y="1274" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="life-psp" style="endArrow=none;dashed=1;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1052.5" y="210" as="sourcePoint" />
+            <mxPoint x="1052.5" y="1274" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="life-lab" style="endArrow=none;dashed=1;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1277.5" y="210" as="sourcePoint" />
+            <mxPoint x="1277.5" y="1274" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="life-mq" style="endArrow=none;dashed=1;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1502.5" y="210" as="sourcePoint" />
+            <mxPoint x="1502.5" y="1274" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="life-not" style="endArrow=none;dashed=1;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1727.5" y="210" as="sourcePoint" />
+            <mxPoint x="1727.5" y="1274" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e0" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="152.5" y="260" as="sourcePoint" />
+            <mxPoint x="377.5" y="260" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el0" value="1 POST booking + Idempotency-Key" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="110.54150390625" y="233" width="326.0" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="377.5" y="313" as="sourcePoint" />
+            <mxPoint x="152.5" y="313" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el1" value="2 202 operationId; Saga и outbox committed" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="78.019775390625" y="286" width="391.0" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="377.5" y="366" as="sourcePoint" />
+            <mxPoint x="602.5" y="366" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el2" value="3 HoldDoctor(sagaId:hold)" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="379.10791015625" y="339" width="236.0" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="602.5" y="419" as="sourcePoint" />
+            <mxPoint x="377.5" y="419" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el3" value="4 doctorHoldId" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="428.212890625" y="392" width="136.0" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="377.5" y="472" as="sourcePoint" />
+            <mxPoint x="827.5" y="472" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el4" value="5 CheckCoverage(patient, service, date)" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="432.469482421875" y="445" width="357.0" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="827.5" y="525" as="sourcePoint" />
+            <mxPoint x="377.5" y="525" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el5" value="6 VALID + fresh version; сумма определена" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="412.968505859375" y="498" width="394.984375" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="377.5" y="578" as="sourcePoint" />
+            <mxPoint x="1052.5" y="578" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el6" value="7 Pay(merchantOperationId); intent уже committed" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="501.134033203125" y="551" width="444.0" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1052.5" y="631" as="sourcePoint" />
+            <mxPoint x="377.5" y="631" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el7" value="8 CONFIRMED + paymentId" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="594.36669921875" y="604" width="255.0" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="377.5" y="684" as="sourcePoint" />
+            <mxPoint x="1277.5" y="684" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el8" value="9 HoldLab(sagaId:lab-hold)" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="712.89697265625" y="657" width="244.0" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1277.5" y="737" as="sourcePoint" />
+            <mxPoint x="377.5" y="737" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el9" value="10 labReservationId" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="743.001953125" y="710" width="183.0" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="377.5" y="790" as="sourcePoint" />
+            <mxPoint x="602.5" y="790" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el10" value="11 ConfirmDoctor(holdId)" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="383.34765625" y="763" width="225.984375" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="602.5" y="843" as="sourcePoint" />
+            <mxPoint x="377.5" y="843" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el11" value="12 confirmed" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="435.082763671875" y="816" width="122.0" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="377.5" y="896" as="sourcePoint" />
+            <mxPoint x="1277.5" y="896" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el12" value="13 ConfirmLab(labReservationId)" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="687.56982421875" y="869" width="295.0" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1277.5" y="949" as="sourcePoint" />
+            <mxPoint x="377.5" y="949" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el13" value="14 confirmed" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="772.582763671875" y="922" width="122.0" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="377.5" y="1002" as="sourcePoint" />
+            <mxPoint x="1502.5" y="1002" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el14" value="15 COMPLETED + outbox; затем BookingConfirmed" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="716.448486328125" y="975" width="466.0" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1502.5" y="1055" as="sourcePoint" />
+            <mxPoint x="1727.5" y="1055" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el15" value="16 Доставка события после publish confirm" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="1426.28955078125" y="1028" width="394.0" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="152.5" y="1108" as="sourcePoint" />
+            <mxPoint x="377.5" y="1108" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el16" value="17 GET operationId" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="182.08837890625" y="1081" width="179.0" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="377.5" y="1161" as="sourcePoint" />
+            <mxPoint x="152.5" y="1161" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el17" value="18 COMPLETED + bookingId + labReservationId" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="58.528076171875" y="1134" width="431.0" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="app" value="Приложение&#10;[Участник]" style="whiteSpace=wrap;html=0;fillColor=#e4efff;strokeColor=#48617f;fontSize=20;align=left;spacing=12;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="50.0" y="130" width="205.0" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="saga" value="Платформа/Saga&#10;[Участник]" style="whiteSpace=wrap;html=0;fillColor=#e4efff;strokeColor=#48617f;fontSize=20;align=left;spacing=12;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="275.0" y="130" width="205.0" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sch" value="Расписание&#10;[Участник]" style="whiteSpace=wrap;html=0;fillColor=#e4efff;strokeColor=#48617f;fontSize=20;align=left;spacing=12;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="500.0" y="130" width="205.0" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pol" value="Полис-фасад&#10;[Участник]" style="whiteSpace=wrap;html=0;fillColor=#e4efff;strokeColor=#48617f;fontSize=20;align=left;spacing=12;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="725.0" y="130" width="205.0" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="psp" value="PSP&#10;[Участник]" style="whiteSpace=wrap;html=0;fillColor=#e4efff;strokeColor=#48617f;fontSize=20;align=left;spacing=12;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="950.0" y="130" width="205.0" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lab" value="Lab Reservation&#10;[Участник]" style="whiteSpace=wrap;html=0;fillColor=#e4efff;strokeColor=#48617f;fontSize=20;align=left;spacing=12;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="1175.0" y="130" width="205.0" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mq" value="RabbitMQ&#10;[Участник]" style="whiteSpace=wrap;html=0;fillColor=#e4efff;strokeColor=#48617f;fontSize=20;align=left;spacing=12;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="1400.0" y="130" width="205.0" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="not" value="Уведомления&#10;[Участник]" style="whiteSpace=wrap;html=0;fillColor=#e4efff;strokeColor=#48617f;fontSize=20;align=left;spacing=12;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="1625.0" y="130" width="205.0" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="foot0" value="Saga хранит состояние каждого шага. Неопределённый платёж сверяется, а не списывается заново." style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1309" width="1820" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="foot1" value="Компенсации и переходы при отказах - Task3.2/README.md; схема показывает только успешный путь." style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1335" width="1820" height="25" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

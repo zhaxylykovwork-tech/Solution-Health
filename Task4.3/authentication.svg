@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1013" viewBox="0 0 1900 1013">
+<rect width="1900" height="1013" fill="white"/>
+<text x="40" y="52" font-family="Arial,DejaVu Sans,sans-serif" font-size="32" fill="#21324b">Аутентификация: OIDC Authorization Code + PKCE S256</text>
+<text x="40" y="86" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">UML Sequence: сверху вниз. Сплошная стрелка - команда/запрос, пунктирная - ответ.</text>
+<polyline points="220.0,210 220.0,903" fill="none" stroke="#48617f" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="580.0,210 580.0,903" fill="none" stroke="#48617f" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="940.0,210 940.0,903" fill="none" stroke="#48617f" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="1300.0,210 1300.0,903" fill="none" stroke="#48617f" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="1660.0,210 1660.0,903" fill="none" stroke="#48617f" stroke-width="2" stroke-dasharray="8 6"/>
+<polyline points="220.0,260 580.0,260" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="580.0,260 568.9472680719654,264.6730201077038 568.9472680719654,255.3269798922962" fill="#48617f"/>
+<rect x="180.176513671875" y="232" width="449.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="184.176513671875" y="252" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">1 Открыть authorize: state, nonce, code_challenge</text>
+<polyline points="580.0,313 940.0,313" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="940.0,313 928.9472680719654,317.6730201077038 928.9472680719654,308.3269798922962" fill="#48617f"/>
+<rect x="585.4638671875" y="285" width="354.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="589.4638671875" y="305" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">2 HTTPS authorize; вход пользователя</text>
+<polyline points="940.0,366 220.0,366" fill="none" stroke="#48617f" stroke-width="2" stroke-dasharray="8 6"/>
+<polygon points="220.0,366 231.05273192803463,361.3269798922962 231.05273192803463,370.6730201077038" fill="#48617f"/>
+<rect x="339.209716796875" y="338" width="492.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="343.209716796875" y="358" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">3 Redirect по зарегистрированной app link: code, state</text>
+<polyline points="220.0,419 940.0,419" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="940.0,419 928.9472680719654,423.6730201077038 928.9472680719654,414.3269798922962" fill="#48617f"/>
+<rect x="343.635009765625" y="391" width="481.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="347.635009765625" y="411" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">4 HTTPS token: code + code_verifier; без client_secret</text>
+<polyline points="940.0,472 220.0,472" fill="none" stroke="#48617f" stroke-width="2" stroke-dasharray="8 6"/>
+<polygon points="220.0,472 231.05273192803463,467.3269798922962 231.05273192803463,476.6730201077038" fill="#48617f"/>
+<rect x="414.142822265625" y="444" width="338.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="418.142822265625" y="464" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">5 access token + rotated refresh token</text>
+<polyline points="220.0,525 1300.0,525" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="1300.0,525 1288.9472680719655,529.6730201077038 1288.9472680719655,520.3269798922962" fill="#48617f"/>
+<rect x="543.734375" y="497" width="440.96875" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="547.734375" y="517" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">6 HTTPS API; Authorization: Bearer access_token</text>
+<polyline points="1300.0,578 940.0,578" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="940.0,578 951.0527319280346,573.3269798922962 951.0527319280346,582.6730201077038" fill="#48617f"/>
+<rect x="892.903076171875" y="550" width="463.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="896.903076171875" y="570" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">7 JWKS HTTPS при необходимости; cache ключей</text>
+<polyline points="940.0,631 1300.0,631" fill="none" stroke="#48617f" stroke-width="2" stroke-dasharray="8 6"/>
+<polygon points="1300.0,631 1288.9472680719655,635.6730201077038 1288.9472680719655,626.3269798922962" fill="#48617f"/>
+<rect x="972.00634765625" y="603" width="300.984375" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="976.00634765625" y="623" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">8 Доверенные публичные ключи</text>
+<polyline points="1300.0,684 1660.0,684" fill="none" stroke="#48617f" stroke-width="2"/>
+<polygon points="1660.0,684 1648.9472680719655,688.6730201077038 1648.9472680719655,679.3269798922962" fill="#48617f"/>
+<rect x="1249.229248046875" y="656" width="473.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="1253.229248046875" y="676" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">9 Проверенный subject / scope; защищённый канал</text>
+<polyline points="1660.0,737 1300.0,737" fill="none" stroke="#48617f" stroke-width="2" stroke-dasharray="8 6"/>
+<polygon points="1300.0,737 1311.0527319280345,732.3269798922962 1311.0527319280345,741.6730201077038" fill="#48617f"/>
+<rect x="1271.197998046875" y="709" width="424.0" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="1275.197998046875" y="729" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">10 Object authorization по patient binding; ответ</text>
+<polyline points="1300.0,790 220.0,790" fill="none" stroke="#48617f" stroke-width="2" stroke-dasharray="8 6"/>
+<polygon points="220.0,790 231.05273192803463,785.3269798922962 231.05273192803463,794.6730201077038" fill="#48617f"/>
+<rect x="549.129150390625" y="762" width="429.984375" height="26" fill="white" stroke="white" stroke-width="2"/>
+<text x="553.129150390625" y="782" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">11 Данные только текущего пациента; no-store</text>
+<rect x="50.0" y="130" width="340.0" height="80" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="62.0" y="162" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Native app</text>
+<text x="62.0" y="189" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">[Участник]</text>
+<rect x="410.0" y="130" width="340.0" height="80" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="422.0" y="162" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Системный браузер</text>
+<text x="422.0" y="189" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">[Участник]</text>
+<rect x="770.0" y="130" width="340.0" height="80" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="782.0" y="162" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">IdP</text>
+<text x="782.0" y="189" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">[Участник]</text>
+<rect x="1130.0" y="130" width="340.0" height="80" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="1142.0" y="162" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Gateway</text>
+<text x="1142.0" y="189" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">[Участник]</text>
+<rect x="1490.0" y="130" width="340.0" height="80" fill="#e4efff" stroke="#48617f" stroke-width="2"/>
+<text x="1502.0" y="162" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">Backend</text>
+<text x="1502.0" y="189" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" fill="#21324b">[Участник]</text>
+<text x="40" y="957" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">Gateway проверяет подпись/iss/aud/exp, backend - права на объект. ID token не применяется как API token.</text>
+<text x="40" y="983" font-family="Arial,DejaVu Sans,sans-serif" font-size="19" fill="#21324b">Refresh в Keychain/Keystore, access в памяти. Logout отзывает refresh-семейство.</text>
+</svg>

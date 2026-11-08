@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="Task4.3-authentication" name="Аутентификация: OIDC Authorization Code + PKCE S256">
+    <mxGraphModel grid="1" page="1" pageWidth="1900" pageHeight="1013">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Аутентификация: OIDC Authorization Code + PKCE S256&#10;UML Sequence: сверху вниз. Сплошная стрелка - команда/запрос, пунктирная - ответ." style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=24;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1820" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="life-app" style="endArrow=none;dashed=1;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220.0" y="210" as="sourcePoint" />
+            <mxPoint x="220.0" y="903" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="life-browser" style="endArrow=none;dashed=1;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580.0" y="210" as="sourcePoint" />
+            <mxPoint x="580.0" y="903" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="life-idp" style="endArrow=none;dashed=1;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="940.0" y="210" as="sourcePoint" />
+            <mxPoint x="940.0" y="903" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="life-gateway" style="endArrow=none;dashed=1;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1300.0" y="210" as="sourcePoint" />
+            <mxPoint x="1300.0" y="903" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="life-backend" style="endArrow=none;dashed=1;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1660.0" y="210" as="sourcePoint" />
+            <mxPoint x="1660.0" y="903" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e0" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220.0" y="260" as="sourcePoint" />
+            <mxPoint x="580.0" y="260" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el0" value="1 Открыть authorize: state, nonce, code_challenge" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="184.176513671875" y="233" width="451.0" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580.0" y="313" as="sourcePoint" />
+            <mxPoint x="940.0" y="313" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el1" value="2 HTTPS authorize; вход пользователя" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="589.4638671875" y="286" width="356.0" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="940.0" y="366" as="sourcePoint" />
+            <mxPoint x="220.0" y="366" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el2" value="3 Redirect по зарегистрированной app link: code, state" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="343.209716796875" y="339" width="494.0" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220.0" y="419" as="sourcePoint" />
+            <mxPoint x="940.0" y="419" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el3" value="4 HTTPS token: code + code_verifier; без client_secret" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="347.635009765625" y="392" width="483.0" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="940.0" y="472" as="sourcePoint" />
+            <mxPoint x="220.0" y="472" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el4" value="5 access token + rotated refresh token" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="418.142822265625" y="445" width="340.0" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220.0" y="525" as="sourcePoint" />
+            <mxPoint x="1300.0" y="525" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el5" value="6 HTTPS API; Authorization: Bearer access_token" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="547.734375" y="498" width="442.96875" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1300.0" y="578" as="sourcePoint" />
+            <mxPoint x="940.0" y="578" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el6" value="7 JWKS HTTPS при необходимости; cache ключей" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="896.903076171875" y="551" width="465.0" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="940.0" y="631" as="sourcePoint" />
+            <mxPoint x="1300.0" y="631" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el7" value="8 Доверенные публичные ключи" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="976.00634765625" y="604" width="302.984375" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1300.0" y="684" as="sourcePoint" />
+            <mxPoint x="1660.0" y="684" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el8" value="9 Проверенный subject / scope; защищённый канал" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="1253.229248046875" y="657" width="475.0" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1660.0" y="737" as="sourcePoint" />
+            <mxPoint x="1300.0" y="737" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el9" value="10 Object authorization по patient binding; ответ" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="1275.197998046875" y="710" width="426.0" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" style="edgeStyle=none;endArrow=block;strokeColor=#48617f;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1300.0" y="790" as="sourcePoint" />
+            <mxPoint x="220.0" y="790" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el10" value="11 Данные только текущего пациента; no-store" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="553.129150390625" y="763" width="431.984375" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="app" value="Native app&#10;[Участник]" style="whiteSpace=wrap;html=0;fillColor=#e4efff;strokeColor=#48617f;fontSize=20;align=left;spacing=12;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="50.0" y="130" width="340.0" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="browser" value="Системный браузер&#10;[Участник]" style="whiteSpace=wrap;html=0;fillColor=#e4efff;strokeColor=#48617f;fontSize=20;align=left;spacing=12;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="410.0" y="130" width="340.0" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="idp" value="IdP&#10;[Участник]" style="whiteSpace=wrap;html=0;fillColor=#e4efff;strokeColor=#48617f;fontSize=20;align=left;spacing=12;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="770.0" y="130" width="340.0" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gateway" value="Gateway&#10;[Участник]" style="whiteSpace=wrap;html=0;fillColor=#e4efff;strokeColor=#48617f;fontSize=20;align=left;spacing=12;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="1130.0" y="130" width="340.0" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="backend" value="Backend&#10;[Участник]" style="whiteSpace=wrap;html=0;fillColor=#e4efff;strokeColor=#48617f;fontSize=20;align=left;spacing=12;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="1490.0" y="130" width="340.0" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="foot0" value="Gateway проверяет подпись/iss/aud/exp, backend - права на объект. ID token не применяется как API token." style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="40" y="938" width="1820" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="foot1" value="Refresh в Keychain/Keystore, access в памяти. Logout отзывает refresh-семейство." style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=19;fontFamily=Arial;" vertex="1" parent="1">
+          <mxGeometry x="40" y="964" width="1820" height="25" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
